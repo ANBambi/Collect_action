@@ -1,0 +1,43 @@
+*{padding:0; margin:0}
+li{list-style:none}
+a{text-decoration: none; font-size: 15px}
+
+.menu{
+    height: 1000px;
+    overflow: hidden;
+    margin: 100px auto;
+    }
+
+.menu > li{
+    width: 35%; 
+    float: none;
+    text-align: center;
+    line-height: 50px;
+    background-color: #835d15;;
+}
+.menu a{
+    color: #f0d6a5;
+}
+
+.submenu > li{
+    width: 250px auto;
+    background-color: rgb(209, 138, 62);
+}
+
+.submenu {
+   
+    height: 0; /* ul 높이 안보이게 가리기*/
+    overflow: hidden; 
+}
+
+.menu > li:hover {
+    background: rgb(209, 138, 62);
+    transition-duration: 0.5s;
+
+}
+
+.menu > li:hover .submenu {
+    height: 250px; /*서브메뉴 리스트 한 열 높이 50*5 니까 다 나오려면*/
+    transition-duration: 0.7s;
+}
+
